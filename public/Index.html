@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIKVID - Watch. Create. Connect.</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#080810;color:white;font-family:Arial,sans-serif}
+header{height:65px;padding:18px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #242432}
+.logo{font-size:27px;font-weight:900;color:#b45cff}
+.feed{height:calc(100vh - 130px);display:flex;align-items:center;justify-content:center;text-align:center;padding:25px}
+.video{width:100%;max-width:430px;height:75%;border:1px solid #343044;border-radius:18px;background:linear-gradient(145deg,#21113c,#11111d);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:15px}
+.video h2{font-size:28px}
+.video p{color:#aaa}
+.upload{background:#a84dff;color:white;border:0;padding:14px 25px;border-radius:30px;font-weight:bold;font-size:16px}
+nav{height:65px;position:fixed;bottom:0;width:100%;background:#11111c;display:flex;justify-content:space-around;align-items:center}
+nav span{font-size:13px;color:#ddd}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">VIKVID</div>
+<div>🔔</div>
+</header>
+<main class="feed">
+<div class="video">
+<div style="font-size:55px">▶️</div>
+<h2>Welcome to VIKVID</h2>
+<p>Watch. Create. Connect.</p>
+<button class="upload" onclick="document.getElementById('file').click()">＋ Upload Video</button>
+<input id="file" type="file" accept="video/*" hidden>
+</div>
+</main>
+<nav>
+<span>🏠 Home</span>
+<span>🔍 Discover</span>
+<span>➕ Create</span>
+<span>💬 Inbox</span>
+<span>👤 Profile</span>
+</nav>
+</body>
+</html>
